@@ -42,7 +42,7 @@ jobs:
         mv ./extra-ipk/op-socat/socat ./
         mv ./extra-ipk/op-socat/luci-app-socat ./
         sed -i 's/msgstr "Socat"/msgstr "端口转发"/g' ./luci-app-socat/po/zh-cn/socat.po
-        sed -i 's/msgstr "Socat"/msgstr "端口轉發"/g' ./luci-app-socat/po/zh_Hans/socat.po
+        sed -i 's/msgstr "Socat"/msgstr "端口转发"/g' ./luci-app-socat/po/zh_Hans/socat.po
         rm -rf ./extra-ipk
         
         
