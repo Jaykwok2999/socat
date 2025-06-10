@@ -50,7 +50,7 @@ jobs:
           fetch-depth: 0
 
       - name: Building packages
-        uses: Jaykwok2999/openwrt-gh-action-sdk@go1.24
+        uses: sbwml/openwrt-gh-action-sdk@go1.24
         env:
           ARCH: ${{ matrix.arch }}-openwrt-24.10
           FEEDNAME: packages_ci
