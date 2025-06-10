@@ -1,9 +1,12 @@
-name: Build packages
-
+name: "Auto compile with openwrt sdk"
 on:
-  push:
-    tags:
-      - v*
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
 
 jobs:
   build:
