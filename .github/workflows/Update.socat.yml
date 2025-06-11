@@ -41,7 +41,7 @@ jobs:
         git clone --depth=1 https://github.com/immortalwrt/packages.git -b openwrt-24.10
         mv ./packages/net/socat ./
         rm -rf ./packages/net
-        
+        rm -rf ./packages
         
         
         
